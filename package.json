@@ -1,0 +1,16 @@
+{
+  "name": "igoro-studios",
+  "version": "1.0.0",
+  "description": "Portfolio artístico e loja online de Igoro Studios.  Animações, arte digital e produtos exclusivos.  Explore nosso trabalho e acesse nossa loja.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
