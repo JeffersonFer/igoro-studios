@@ -1,0 +1,13 @@
+:root {
+  --cor-fundo: #0c0b0d;
+  --cor-texto: #7a9fd9;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

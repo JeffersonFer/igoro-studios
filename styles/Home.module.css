@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logoWrapper::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--cor-texto),
+    transparent 40%,
+    var(--cor-texto)
+  );
+  filter: blur(16px);
+  opacity: 0.9;
+  animation: girar 3s linear infinite;
+}
+
+.logoWrapper::after {
+  content: "";
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--cor-texto) 0%, transparent 70%);
+  filter: blur(30px);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
